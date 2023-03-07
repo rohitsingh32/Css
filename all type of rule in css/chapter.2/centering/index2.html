@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all types border and border-radius</title>
+
+    <style>
+        body {
+            background-image: url(1.jpg);
+            background-attachment: fixed;
+        }
+
+        p {
+             border: 5px solid rgb(251, 4, 4); 
+            outline-color: rgb(8, 0, 255);
+            line-height: 30px;
+            margin: 50px;
+        }
+
+        .p1 {
+            outline-style:  dotted;
+        }
+
+        .p2 {
+            outline-style: dashed;
+        }
+
+        .p3 {
+            outline-style: solid;
+        }
+
+        .p4 {
+            outline-style: double;
+        }
+
+        .p5 {
+            outline-style: groove;
+        }
+
+        .p6 {
+            outline-style: ridge;
+        }
+
+        .p7 {
+            outline-style: inset;
+        }
+
+        .p8 {
+            outline-style: outset;
+        }
+
+         .bordered {
+            color: aliceblue;
+            font-size: 25px;
+            border: 10px groove red;
+            padding: 10px;
+            text-align: center;
+            border-radius: 100px;
+
+            /* border-top-left-radius: 100px;
+           border-top-right-radius: 200px;
+           border-bottom-left-radius:300px;
+           border-bottom-right-radius: 400px; */
+        }
+    </style>
+</head>
+
+<body>
+    
+
+    <p class="p1">A dotted outline</p>
+    <p class="p2">A dashed outline</p>
+    <p class="p3">A solid outline</p>
+    <p class="p4">A double outline</p>
+    <p class="p5">A groove outline</p>
+    <p class="p6">A ridge outline</p>
+    <p class="p7">An inset outline</p>
+    <p class="p8">An outset outline</p>
+
+    <div class='bordered'>Border on all sides</div>
+
+</body>
+
+</html>

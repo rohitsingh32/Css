@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+         .items {
+            background-color: aqua;
+            padding: 5px;
+            margin: 5px;
+            border: 2px solid black;
+            cursor: pointer;
+            width: 100px;
+            display: flex;
+             justify-content: center; 
+            /* align-items: center; */
+            
+         }
+          .items:hover {
+            background-color: black;
+            color: aliceblue;
+            border: 2px solid white;
+            font-weight: 900;
+            transition: 1s;
+          } 
+             
+          
+         #container{ background: linear-gradient(lime,yellow);
+            height: 100vh;
+             display: flex; 
+            align-items: center;
+            justify-content: center;  
+             
+             flex-direction: column;
+
+           
+        } 
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+       <box class="items">itens</box>
+       <box class="items">itens</box>
+       <box class="items">itens</box>
+    </div>
+</body>
+
+</html>

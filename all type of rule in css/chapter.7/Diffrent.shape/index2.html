@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circle/ellipses/bursts</title>
+    <style>
+        body{
+            display: flex;
+            margin: 10px;
+        }
+        /* circle */
+        .circle {
+            width: 50px;
+            height: 50px;
+            background: rgb(246, 156, 85);
+            border-radius: 50%;
+            margin: 10px;
+        }
+        /* ellipse */
+        .oval {
+            width: 50px;
+            height: 80px;
+            background: rgb(246, 156, 85);
+            border-radius: 50%;
+            margin: 10px;
+        }
+        /*bursts*/
+        .burst-8 {
+            background: rgb(246, 156, 85);
+            width: 40px;
+
+            height: 40px;
+             position: relative; 
+            /* text-align: center; */
+          
+          
+            margin: 10px;
+        }
+
+        .burst-8::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 40px;
+            width: 40px;
+            background: rgb(246, 156, 85);
+            -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
+        }
+          /* point burst */
+        .burst-12 {
+            width: 40px;
+            height: 40px;
+            position: relative;
+            text-align: center;
+            background: rgb(246, 156, 85);
+            margin: 10px;
+        }
+
+        .burst-12::before,
+        .burst-12::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 40px;
+            width: 40px;
+            background: rgb(246, 156, 85);
+        }
+
+        .burst-12::before {
+            -ms-transform: rotate(30deg);
+            transform: rotate(30deg);
+        }
+
+        .burst-12::after {
+            -ms-transform: rotate(60deg);
+            transform: rotate(60deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle"></div>
+    <div class="oval"></div>
+    <div class="burst-8"></div>
+    <div class="burst-12"></div>
+</body>
+
+</html>

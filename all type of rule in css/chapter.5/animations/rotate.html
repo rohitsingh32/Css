@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotate</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .body{
+             background: linear-gradient(rgb(100, 179, 100),rgb(167, 167, 103));
+             height: 100vh;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        img {
+            position: relative;
+            top: 30%;
+            left: 30%;
+            animation: rotate .9s ease-in-out infinite;
+     
+            margin: auto; 
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <img src="dragon.png" width="300px" height="300px">
+    </div>
+</body>
+</html>

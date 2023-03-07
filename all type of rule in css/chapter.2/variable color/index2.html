@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables with media queries</title>
+    <style>
+        :root {
+            --width: 25%;
+            --content: 'This is desktop';
+        }
+
+        @media only screen and (max-width: 767px) {
+            :root {
+                --width: 50%;
+                --content: 'This is mobile';
+            }
+        }
+
+        @media only screen and (max-width: 510px) {
+            :root {
+                --width: 100%;
+            }
+        }
+
+        div {
+            width: calc(var(--width) - 20px);
+            height: 100px;
+        }
+
+        div:before {
+            content: var(--content);
+        }
+
+            body {
+                padding: 10px;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                float: left;
+                margin: 10px;
+                border: 4px solid black;
+                background: red;
+            }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

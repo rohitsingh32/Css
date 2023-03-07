@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-shadow</title>
+    <style>
+        .box_shadow {
+            background-color: #1C90F3;
+            width: 200px;
+            height: 100px;
+            margin: 50px;
+        }
+
+        .box_shadow:after {
+            content: "";
+            width: 190px;
+            height: 1px;
+            margin-top: 98px;
+            margin-left: 5px;
+            display: block;
+            position: absolute;
+            z-index: -1;
+            -webkit-box-shadow: 0px 0px 8px 2px #444444;
+            -moz-box-shadow: 0px 0px 8px 2px #444444;
+            box-shadow: 0px 0px 8px 2px #444444;
+        }
+
+        .box {
+            background-color: #1C90F3;
+            height: 100px;
+            width: 200px;
+            margin: 50px;
+            -webkit-box-shadow: 0px 0px 10px -1px #444444;
+            -moz-box-shadow: 0px 0px 10px -1px #444444;
+            box-shadow: 10px 10px 10px -1px #444444;
+        }
+
+        .shadow {
+            width: 100px;
+            height: 100px;
+            margin: 100px;
+            box-shadow:
+                -52px -52px 0px 0px #f65314,
+                52px -52px 0px 0px #91d705,
+                -52px 52px 0px 0px #21a7ea,
+                52px 52px 0px 0px #f3c546;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box_shadow">1</div>
+
+    <div class="box">2</div>
+
+    <div class="shadow">3</div>
+</body>
+
+</html>

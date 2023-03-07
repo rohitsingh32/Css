@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc() function</title>
+    <style>
+        .one {
+            position: absolute;
+            top: 100px;
+            left: 50px;
+            
+             width: calc(100% - 50%); 
+             width: calc(100% - 400px); 
+            border: 1px solid black;
+            background-color: rgb(102, 255, 0);
+            padding: 50px; /* height and width gives (defult) accodinc to yours give padding*/
+           
+            transform: rotatez(36deg);
+              
+        }
+        .one:hover{
+            background-color: yellow;
+            border: 2px solid lime;
+            cursor: pointer;
+           transition: 2s;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="one"></div>
+
+    
+</body>
+
+</html>

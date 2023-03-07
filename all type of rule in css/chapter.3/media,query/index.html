@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        @media screen and (max-width: 720px) {
+
+            body {
+                color: rgb(4, 80, 54);
+                background-color: skyblue;
+            }
+        }
+
+        @media screen and (min-width: 720px) and (max-width:1200px) {
+            body {
+                background-color: rgb(31, 218, 134);
+                color: red;
+                font-size: 1.5rem;
+            }
+        }
+
+
+
+        @media screen and (min-width: 1200px) and (max-width: 1600px) 
+                     /* and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi)*/ { 
+            body {
+                background: linear-gradient(lime, yellow);
+                 font-size: 2rem; 
+                 height: 100vh;
+            }
+        }
+
+
+
+        /* use @media query on link tag
+<link rel="stylesheet" media="min-width: 600px" href="style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="style-ielt9.css"/>
+ */
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo modi ea error cupiditate quae! Voluptates
+            officia saepe vitae possimus ea eos perspiciatis hic obcaecati sequi in ullam reprehenderit veritatis,
+            accusamus numquam, voluptatum ipsa blanditiis.</p>
+    </div>
+</body>
+
+</html>

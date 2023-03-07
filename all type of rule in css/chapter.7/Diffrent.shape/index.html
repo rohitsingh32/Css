@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diffrent diffrent shape in traingale</title>
+    <style>
+        :root{
+            --mar:10px;
+        }
+        body{
+            display: flex;
+            margin: 10px;
+            padding:10px;
+        }
+        .trapezoid {
+            width: 50px;
+
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid black;
+        }
+
+        .triangle-up {
+            margin: var(--mar);
+           height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 50px solid rgb(246, 156, 85);
+        }
+
+        .triangle-down {
+            margin: var(--mar);
+            
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-top: 50px solid rgb(246, 156, 85);
+        }
+
+        .triangle-right {
+            margin: var(--mar);
+            width: 0;
+            height: 0;
+            border-top: 25px solid transparent;
+            border-bottom: 25px solid transparent;
+            border-left: 50px solid rgb(246, 156, 85);
+        }
+
+        .triangle-left {
+            margin: var(--mar);
+            width: 0;
+            height: 0;
+            border-top: 25px solid transparent;
+            border-bottom: 25px solid transparent;
+            border-right: 50px solid rgb(246, 156, 85);
+        }
+
+        .triangle-up-right {
+            margin: var(--mar);
+            width: 0;
+            height: 0;
+            border-top: 50px solid rgb(246, 156, 85);
+            border-left: 50px solid transparent;
+        }
+
+        .triangle-up-left {
+            margin: var(--mar);
+            width: 0;
+            height: 0;
+            border-top: 50px solid rgb(246, 156, 85);
+            border-right: 50px solid transparent;
+        }
+
+        .triangle-down-right {
+            margin: var(--mar);
+            width: 0;
+            height: 0;
+            border-bottom: 50px solid rgb(246, 156, 85);
+            border-left: 50px solid transparent;
+        }
+
+        .triangle-down-left {
+            margin: var(--mar);
+            width: 0;
+            height: 0;
+            border-bottom: 50px solid rgb(246, 156, 85);
+            border-right: 50px solid transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="trapezoid"></div>
+    <div class="triangle-up"></div>
+    <div class="triangle-down"></div>
+    <div class="triangle-right"></div>
+    <div class="triangle-left"></div>
+    <div class="triangle-up-right"></div>
+    <div class="triangle-up-left"></div>
+    <div class="triangle-down-right"></div>
+    <div class="triangle-down-left"></div>
+</body>
+
+</html>

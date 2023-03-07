@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-line DIV using float</title>
+    <style>
+        /* .inner-div1 {
+            width: 50%;
+            margin-right: 0px;
+            float: left;
+            background: #337ab7;
+            padding: 50px 0px;
+        }
+
+        .inner-div2 {
+            width: 50%;
+            margin-right: 0px;
+            float: left;
+            background: #dd2c00;
+            padding: 50px 0px;
+        }
+
+        p {
+            text-align: center;
+        } */
+        .wrapper {
+            width: 600px;
+            background-color: pink;
+            padding: 20px;
+            /* Floated elements don't use any height. Adding "overflow:hidden;" forces the
+parent element to expand to contain its floated children. */
+            overflow: hidden;
+            display: flex;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+            
+        
+
+        .left-sidebar {
+            width: 150px;
+            background-color: rgb(112, 112, 230);
+            float: left;
+        }
+
+        .content {
+            width: 300px;
+            background-color: rgb(229, 229, 114);
+            float: left;
+        }
+
+        .right-sidebar {
+            width: 150px;
+            background-color: rgb(100, 202, 100);
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="outer-div">
+        <div class="inner-div1">
+            <p>This is DIV 1</p>
+        </div>
+        <div class="inner-div2">
+            <p>This is DIV 2</p>
+        </div>
+    </div> -->
+    <div class="wrapper">
+        <div class="left-sidebar">
+            <h1>Left Sidebar</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </div>
+        <div class="content">
+            <h1>Content</h1>
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque
+                nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin
+                ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non,
+                massa. </p>
+        </div>
+        <div class="right-sidebar">
+            <h1>Right Sidebar</h1>
+            <p>Fusce ac turpis quis ligula lacinia aliquet.</p>
+        </div>
+    </div>
+</body>
+
+</html>

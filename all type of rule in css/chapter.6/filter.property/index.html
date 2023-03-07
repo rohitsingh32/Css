@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> filter property/Blur</title>
+    <style>
+        body {
+            display: flex;
+
+
+        }
+
+        .one {
+            height: 200px;
+
+            
+            filter: blur(1px) ;
+            /* filter: drop-shadow(10px 10px 1px rgb(3, 72, 60)); */
+        }
+
+        h2 {
+            -webkit-filter: drop-shadow(10px 10px 1px green);
+            filter: drop-shadow(10px 10px 1px green);
+        }
+
+        .two {
+            height: 200px;
+            -webkit-filter: hue-rotate(120deg);
+            filter: hue-rotate(112deg);
+        }
+
+        .three {
+            height: 200px;
+            -webkit-filter: brightness(200%) grayscale(100%) sepia(100%) invert(100%);
+            filter: brightness(200%) grayscale(100%) sepia(100%) invert(100%);
+        }
+    </style>
+</head>
+
+<body>
+    <img class="one" src='donald-duck.png' />
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <img class="two" src='donald-duck.png'  />
+    <img class="three" src='donald-duck.png'  />
+
+</body>
+
+</html>

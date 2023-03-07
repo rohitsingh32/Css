@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>square/cube/pyramid</title>
+    <style>
+        .square {
+            width: 100px;
+            height: 100px;
+            background: rgb(246, 156, 85);
+            margin: 30px;
+        }
+
+        .cube {
+            background: #dc2e2e;
+            width: 100px;
+            height: 100px;
+           position: relative;  
+            margin: 50px;
+        }
+
+        .cube::before {
+            content: '';
+
+            display: inline-block;
+            background: #f15757;
+            width: 100px;
+            height: 20px;
+            transform: skewX(-40deg);
+            position: absolute;
+            top: -20px;
+            left: 8px;
+        }
+
+        .cube::after {
+            content: '';
+            display: inline-block;
+            background: #9e1515;
+            width: 16px;
+            height: 100px;
+            transform: skewY(-50deg);
+            position: absolute;
+            top: -10px;
+            left: 100%;
+        }
+
+        .pyramid {
+            width: 100px;
+            height: 200px;
+            position: relative;
+            margin: 50px;
+        }
+
+        .pyramid::before,
+        .pyramid::after {
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: 50px solid;
+
+            position: absolute;
+        }
+
+        .pyramid::before {
+            border-color: transparent transparent #ff5656 transparent;
+            transform: scaleY(2) skewY(-40deg) rotate(45deg);
+        }
+
+        .pyramid::after {
+            border-color: transparent transparent #d64444 transparent;
+            transform: scaleY(2) skewY(40deg) rotate(-45deg);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="square"></div>
+    <div class="cube"></div>
+    <div class="pyramid"></div>
+</body>
+
+</html>

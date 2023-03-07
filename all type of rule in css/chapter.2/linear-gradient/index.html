@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radial-gradient()function/linear-gradient()function</title>
+    <style> 
+    body{
+        display: flex;
+    } 
+    /* linear-gradent()function*/
+        .one{ margin: 10px;
+            height: 100px;
+            width: 200px;
+            background: linear-gradient( red, yellow);
+        }
+    .two{ margin: 10px;
+            height: 150px;
+            width: 200px;
+            background: linear-gradient( red, yellow , blue );
+        }
+        .three{ margin: 10px;
+            height: 200px;
+            width: 200px;
+            background: linear-gradient( red, yellow , blue , green);
+        }
+        .four{ margin: 10px;
+            height: 300px;
+            width: 200px;
+            background: linear-gradient( red, yellow , blue , green, pink , black );
+        }
+       /* radial-gradient()functoin*/
+       .ek{
+        margin: 10px;
+           height: 150px;
+           width: 200px;
+        background: radial-gradient( red, blue , yellow );
+       }
+       
+       .do{
+        margin: 10px;
+          height: 150px;
+           width: 200px;
+        background: radial-gradient( red, blue , yellow , orange);
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+    <div class="four">four</div>
+
+    <div class="ek">ek</div>
+    <div class="do">do</div>
+</body>
+</html>

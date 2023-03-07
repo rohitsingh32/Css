@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementing multi-level numbering using CSS
+        counters</title>
+    <style>
+        ul {
+            list-style: none;
+            counter-reset: list-item-number;
+            /* self nesting counter as name is same for all levels */
+        }
+
+        li {
+            counter-increment: list-item-number;
+        }
+
+        li:before {
+            content: counters(list-item-number, ".") " ";
+            /* usage of counters() function means value of
+counters at all higher levels are combined before printing */
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Level 1
+            <ul>
+                <li>Level 1.1
+                    <ul>
+                        <li>Level 1.1.1</li>
+                    </ul>
+                </li>
+            </ul>
+
+        </li>
+        <li>Level 2
+            <ul>
+                <li>Level 2.1
+                    <ul>
+                        <li>Level 2.1.1</li>
+                        <li>Level 2.1.2</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Level 3</li>
+    </ul>
+</body>
+
+</html>

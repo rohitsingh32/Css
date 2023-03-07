@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       
+        .img{
+            display: flex;
+        }
+        .one {
+            height: 300px;
+            
+            mask-image: linear-gradient(to right, rgb(198, 24, 24), transparent);
+        }
+
+        .two {
+            height: 300px;
+            mask-image: radial-gradient(circle farthest-side at center, transparent 49%, rgb(214, 56, 56) 50%);
+            /* check remarks before using */
+            
+        }
+        .boxes{
+            display: flex;
+            
+        }
+        .box{
+            background: linear-gradient(red, yellow);
+            height: 150px;
+            width: 150px;
+            margin: 2px;
+        }
+        .box2{
+            background: linear-gradient(to right,red, yellow);
+            height: 150px;
+            width: 150px;
+            margin: 2px;
+        }
+        .box3{
+            background: linear-gradient(to left,red, yellow);
+            height: 150px;
+            width: 150px;
+            margin: 2px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img">
+    <div><img class="one" src="1.jpg"></div>
+    <div><img class="two" src="1.jpg"></div>
+  </div>
+    <div class="boxes">
+    <div class="box">box</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+   </div>
+</body>
+
+</html>

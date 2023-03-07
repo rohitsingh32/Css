@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform & transition</title>
+    <style>
+        .container{
+            background-color: red;
+            height: 546px;
+        }
+        .box{
+            border: 2px solid black;
+            display: inline-block;
+           
+            transform: translate(134px, 56px) ;
+            /* transform: rotate(45deg);
+             transform-origin: center ;        put value center ya 0 centeer value is bydefult */
+             /* transform: scale(4, 7);  */
+            /* transform: scaleX(8); */
+            /* transform: scaleY(8); */
+             transform: skew(34, 27);
+        }
+        img{
+            width: 200px;
+            height: 455px;
+            /* transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 3s; */
+            transition: width 1s ease-in-out, height 4s ease-in;
+        } 
+        #btn{
+            cursor: pointer;
+        }
+    </style>
+  
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myImage" src="1.jpg">
+            <button id="btn">Toggle</button>
+        </div>
+         
+    </div>
+</body>
+<script>
+    myImage.style.width = '546px';
+    myImage.style.height = '416px';
+
+    btn.addEventListener("click", ()=>{
+        myImage.style.height = '456px';
+        if(myImage.style.width === '546px'){
+            myImage.style.width = "146px";
+        }
+        else if(myImage.style.width === '146px'){
+            myImage.style.width = "546px";
+        } 
+    })
+</script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable color</title>
+    <style>
+        :root {
+            --main-bg-color: pink;
+            --red: rgb(224, 23, 23);
+            --blue: #4679bd;
+            --grey: rgb(27, 191, 228);
+            --padding: 8px;
+            --he:90vh;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: var(--main-bg-color);
+            color: var(--red);
+            border: 4px groove var(--blue);
+            padding: var(--padding);
+            text-align: center;
+        }
+
+        main {
+            background: linear-gradient(red, yellow);
+            height:var(--he);
+            
+        }
+
+        footer {
+            background: var(--main-bg-color);
+            color: var(--grey);
+            padding: var(--padding);
+            border: 4px solid var(--blue);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>This is a header</h1>
+        </header>
+        <main>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque possimus odio, ab architecto
+                pariatur ut placeat id accusamus tempore excepturi totam est culpa quisquam neque dolorum ipsam
+                exercitationem accusantium deleniti voluptatibus corrupti voluptatem non. Quos quibusdam cupiditate
+                eligendi excepturi rem odit. Dolorum itaque culpa nulla aut, omnis molestiae excepturi quaerat corporis
+                architecto, temporibus hic corrupti velit nihil eos eaque maxime! Voluptatibus nulla aut aliquam
+                voluptates quibusdam incidunt error veritatis fugit placeat sunt sit dolorem quae dolore nisi magni,
+                quis.</p>
+        </main>
+        <footer> All &copy; Right reversed</footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shapes for floats</title>
+    <style>
+        img:nth-of-type(1) {
+            shape-outside: circle(80px at 50% 50%);
+            float: left;
+            width: 200px;
+            shape-margin: 10px;
+        }
+
+        img:nth-of-type(2) {
+            shape-outside: circle(80px at 50% 50%);
+            float: right;
+            width: 200px;
+            /* shape-margin: 10px; */
+        }
+
+        p {
+            text-align: center;
+            line-height: 30px;
+          
+            /* purely for demo */
+        }
+    </style>
+</head>
+
+<body>
+    <img src="donald-duck.png">
+    <img src="donald-duck.png">
+    <p>Some paragraph whose text content is required to be wrapped such that it follows the curve of
+        the circle on either side. And then there is some filler text just to make the text long enough.
+        Lorem Ipsum Dolor Sit Amet....</p>
+</body>
+
+</html>

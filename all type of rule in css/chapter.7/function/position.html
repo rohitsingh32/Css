@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position: relative</title>
+    <!--five kind of position 1.Static, 2.relative, 3.absolute, 4.fixed, 5.sticky
+        1. position: static;     (it is default value)
+        2. position: relative;
+           top: 40px; left: 40px;
+        3. position: absoulte;
+           top: 40px; left: 40px;
+        4.  position: fixed;
+        top: 40px; left: 40px;
+        5. position: sticky;
+             top: 10px;   
+                       -->
+    <style>
+        * {
+            box-sizing: border-box;
+            
+        }
+      
+       
+        .box {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: red;
+            color: white;
+        }
+        p{
+            width: 20px;
+            
+        }
+
+          #two {
+            position: relative;
+            top: 40px;
+            left: 30px;
+            background: blue;
+        }  
+
+           #two {
+            position: absolute;
+            top: 40px;
+            left: 30px;
+            background: rgb(134, 134, 185);
+        }   
+
+          #two {
+            position: fixed;
+            top: 40px;
+            left: 30px;
+            background: rgb(255, 191, 0);
+        }  
+         
+       
+    
+        
+           #two{
+            position: sticky;
+             top: 10px;
+             background: rgb(156, 156, 116);
+          } 
+    </style>
+</head>
+
+<body>
+    
+    <div class="box" id="one">One</div>
+    <div class="box" id="two">Two</div>
+    <div class="box" id="three">Three</div>
+    <div class="box" id="four">Four</div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, voluptatibus provident fuga consequuntur ad at in nesciunt quae iste deleniti, sequi quibusdam corrupti, necessitatibus dignissimos repellat velit quod iure aspernatur quo blanditiis? Eaque quia aperiam magni itaque eligendi pariatur odit aliquid nihil, perferendis quisquam! Accusamus, corporis. Dolorum temporibus beatae asperiores suscipit pariatur! Excepturi fuga vero earum tenetur esse, est repellendus vel perferendis ipsum quaerat saepe, incidunt optio rem temporibus doloribus libero aliquid inventore nostrum quas beatae? Exercitationem, sunt. Cupiditate perspiciatis in nisi nam facere quidem beatae, fugit fugiat neque explicabo vero odit quasi animi at itaque id saepe deleniti necessitatibus quaerat provident assumenda corrupti autem. Delectus fugiat voluptas nihil in voluptatibus laboriosam, eius ipsum, corrupti quae exercitationem minus nobis quis adipisci perspiciatis?</p>
+
+</body>
+
+</html>
+
